@@ -1,0 +1,40 @@
+site_name: C++ moderne
+site_description: Les différents standards C++11, 14, 17 et 20
+site_url: http://tvaira.free.fr/dev/cours/c++-moderne.html
+site_author: Thierry VAIRA
+repo_url: https://github.com/tvaira/cpp-moderne
+copyright: GPL
+
+plugins:
+    - search
+    - git-revision-date-localized:
+        enable_creation_date: true
+        type: date
+
+theme:
+    name: readthedocs
+    locale: fr
+    highlightjs: true
+    
+
+# https://squidfunk.github.io/mkdocs-material/
+#theme:
+#    name: material
+#    locale: fr
+##    logo: logo.png
+##    favicon: logo.png
+#    highlightjs: true
+#    hljs_style: Github Dark
+#    font:
+#        text: Lato
+#        code: JetBrains Mono
+
+# https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+# https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.highlight
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.keys

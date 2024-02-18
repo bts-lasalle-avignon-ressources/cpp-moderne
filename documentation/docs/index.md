@@ -1,63 +1,8 @@
 # C++ moderne
 
-À la découverte des standards C++11, C++14, C++17 ...
+>Ce document en PDF : [c++-moderne.pdf](https://raw.githubusercontent.com/tvaira/cpp-moderne/main/build/c++-moderne.pdf) 
 
-- [C++ moderne](#c-moderne)
-	- [C++](#c)
-	- [Les standards C++xx](#les-standards-cxx)
-	- [Les exemples](#les-exemples)
-	- [C++11](#c11)
-		- [Les types et les variables](#les-types-etlesvariables)
-		- [Initialisation](#initialisation)
-		- [auto](#auto)
-		- [Membre mutable](#membre-mutable)
-		- [Les pointeurs](#les-pointeurs)
-		- [Les pointeurs intelligents](#les-pointeurs-intelligents)
-		- [Les énumérations](#les-énumérations)
-		- [decltype](#decltype)
-		- [Les littéraux utilisateur](#les-littéraux-utilisateur)
-		- [Range-for](#range-for)
-		- [Les expressions rationnelles](#les-expressions-rationnelles)
-		- [Délégation du constructeur](#délégation-du-constructeur)
-		- [Héritage des constructeurs](#héritage-des-constructeurs)
-		- [Liste d'initialiseurs](#liste-dinitialiseurs)
-		- [constexpr](#constexpr)
-		- [Les nouveaux spécificateurs de classe (override, default, delete, final)](#les-nouveaux-spécificateurs-de-classe-override-default-delete-final)
-		- [Référence sur rvalue](#référence-sur-rvalue)
-		- [La fonction move()](#la-fonction-move)
-		- [Déplacement (constructeur et opérateur)](#déplacement-constructeur-et-opérateur)
-		- [Threads](#threads)
-		- [std::future et std::async](#stdfuture-et-stdasync)
-		- [Mutex](#mutex)
-		- [std::ref](#stdref)
-		- [Les tableaux à taille fixe array](#les-tableaux-à-taille-fixe-array)
-		- [Les listes simplement chaînée](#les-listes-simplement-chaînée)
-		- [Le type Tuple](#le-type-tuple)
-		- [Tables de hachage](#tables-de-hachage)
-		- [Nombres pseudo-aléatoires](#nombres-pseudo-aléatoires)
-		- [Fonction lambda](#fonction-lambda)
-		- [std::function et std::mem\_fn](#stdfunction-et-stdmem_fn)
-	- [C++14](#c14)
-		- [Nombres binaires](#nombres-binaires)
-		- [Séparateur de chiffres](#séparateur-de-chiffres)
-	- [C++17](#c17)
-		- [Le type byte](#le-type-byte)
-		- [std::invoke](#stdinvoke)
-		- [std::optional](#stdoptional)
-		- [std::any](#stdany)
-	- [C++20](#c20)
-	- [Wikipédia](#wikipédia)
-	- [Voir aussi](#voir-aussi)
-	- [Auteurs](#auteurs)
-
----
-
-> [!NOTE]
-> Il existe une version rédigée au format [Asciidoc](https://asciidoc.org/).
-> Des versions du document au format HTML et PDF sont dans `build`.
-> Les codes sources des exemples sont dans `src`.
-
----
+***
 
 ## C++
 
@@ -73,14 +18,14 @@ Dans l'index de popularité des langages [TIOBE](https://www.tiobe.com/tiobe-ind
 
 ![](./images/cover.png)
 
-Liens :
+Liens : 
 
-- [www.cplusplus.com](http://www.cplusplus.com/reference/)
-- [Comité du standard C++](http://www.open-std.org/jtc1/sc22/wg21/)
+* [www.cplusplus.com](http://www.cplusplus.com/reference/)
+* [Comité du standard C++](http://www.open-std.org/jtc1/sc22/wg21/)
 
-## Les standards C++xx
+## C++ moderne
 
-Le C++ moderne est apparu avec la mise à jour C++11.
+Le C++ moderne est apparu avec la mise à jour C++11. 
 
 Les standards C++11, 14, 17 et bientôt 20 apportent de nombreuses fonctionnalités : gestion automatique de la mémoire via des pointeurs intelligents (_Smart Pointers_), déduction de type automatique à la déclaration via `auto`, etc ...
 
@@ -682,8 +627,8 @@ La transformation des littéraux est redéfinie en deux phases distinctes : _raw
 
 Liens :
 
-- [raw](https://akrzemi1.developpez.com/tutoriels/c++/litteraux-utilisateur/?page=litteraux-bruts)
-- [cooked](https://akrzemi1.developpez.com/tutoriels/c++/litteraux-utilisateur/?page=les-litteraux-prepares)
+* [raw](https://akrzemi1.developpez.com/tutoriels/c++/litteraux-utilisateur/?page=litteraux-bruts)
+* [cooked](https://akrzemi1.developpez.com/tutoriels/c++/litteraux-utilisateur/?page=les-litteraux-prepares)
 
 Tous les littéraux définis par l'utilisateur seront des __suffixes__. La définition de littéraux de préfixe n'est pas possible. Tous les suffixes commençant par n'importe quel caractère sauf le trait de soulignement (`_`) sont réservés par la norme. Ainsi, tous les littéraux définis par l'utilisateur doivent avoir des suffixes commençant par un trait de soulignement (`_`).
 
@@ -832,8 +777,8 @@ La bibliothèque C++ standard prend maintenant (en C++11) en charge les __expres
 
 Liens : 
 
-- [regex](http://www.cplusplus.com/reference/regex/)
-- [Syntaxe ECMAScript](http://www.cplusplus.com/reference/regex/ECMAScript/)
+* [regex](http://www.cplusplus.com/reference/regex/)
+* [Syntaxe ECMAScript](http://www.cplusplus.com/reference/regex/ECMAScript/)
 
 ```cpp
 #include <iostream>
@@ -1359,8 +1304,8 @@ Le constructeur de déplacement et l'opérateur de déplacement utilisent les r�
 
 Liens :
 
-- [move_constructor](https://en.cppreference.com/w/cpp/language/move_constructor)
-- [move_assignment](https://en.cppreference.com/w/cpp/language/move_assignment)
+* [move_constructor](https://en.cppreference.com/w/cpp/language/move_constructor)
+* [move_assignment](https://en.cppreference.com/w/cpp/language/move_assignment)
 
 Exemple pour une classe `Point` :
 
@@ -2044,8 +1989,8 @@ Il existe deux types de tables de hachage dans la STL :
 
 Liens : 
 
-- [hash_set](https://www.sgi.com/tech/stl/hash_set.html)
-- [hash_map](https://www.sgi.com/tech/stl/hash_map.html)
+* [hash_set](https://www.sgi.com/tech/stl/hash_set.html)
+* [hash_map](https://www.sgi.com/tech/stl/hash_map.html)
 
 _Remarque :_ `hash_set` et `hash_map` font partie de la STL mais ne sont pas intégrés à la bibliothèque standard C++. Les compilateurs GNU C++ et Visual C++ de Microsoft les ont quand même implémentés.
 
@@ -2053,8 +1998,8 @@ Le standard C++11 propose des conteneurs similaires : `unordered_set` et `unorde
 
 Liens : 
 
-- [unordered_set](http://www.cplusplus.com/reference/unordered_set/unordered_set/)
-- [unordered_map](http://www.cplusplus.com/reference/unordered_map/unordered_map/)
+* [unordered_set](http://www.cplusplus.com/reference/unordered_set/unordered_set/)
+* [unordered_map](http://www.cplusplus.com/reference/unordered_map/unordered_map/)
 
 ```cpp
 #include <iostream>
@@ -2267,8 +2212,8 @@ Une lambda est une fonction possiblement anonyme et destinée à être utilisée
 
 Liens :
 
-- [lambda](https://en.cppreference.com/w/cpp/language/lambda)
-- [Des fonctions somme toute lambdas](https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/decoupons-tout-ca/des-fonctions-somme-toute-lambda/)
+* [lambda](https://en.cppreference.com/w/cpp/language/lambda)
+* [Des fonctions somme toute lambdas](https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/decoupons-tout-ca/des-fonctions-somme-toute-lambda/)
 
 Syntaxe :
 
@@ -2414,8 +2359,8 @@ int main()
 
 Liens : 
 
-- [std::function](http://www.cplusplus.com/reference/functional/function/)
-- [std::mem_fn](http://www.cplusplus.com/reference/functional/mem_fn/)
+* [std::function](http://www.cplusplus.com/reference/functional/function/)
+* [std::mem_fn](http://www.cplusplus.com/reference/functional/mem_fn/)
 
 
 
@@ -2471,9 +2416,9 @@ int main()
 
 Liens :
 
-- [De C++14 à C++17](https://www.developpez.com/actu/128065/De-Cplusplus14-a-Cplusplus17-qu-est-ce-qui-a-change-avec-la-nouvelle-version-du-langage-Cplusplus-un-document-de-la-Standard-Cplusplus-Foundation/)
-- [C++17](https://cpp.developpez.com/actu/127416/La-specification-de-la-nouvelle-version-du-langage-Cplusplus-Cplusplus17-est-finalisee-quelles-sont-les-nouveautes-introduites/)
-- [C++17 (en)](https://en.wikipedia.org/wiki/C%2B%2B17)
+* [De C++14 à C++17](https://www.developpez.com/actu/128065/De-Cplusplus14-a-Cplusplus17-qu-est-ce-qui-a-change-avec-la-nouvelle-version-du-langage-Cplusplus-un-document-de-la-Standard-Cplusplus-Foundation/)
+* [C++17](https://cpp.developpez.com/actu/127416/La-specification-de-la-nouvelle-version-du-langage-Cplusplus-Cplusplus17-est-finalisee-quelles-sont-les-nouveautes-introduites/)
+* [C++17 (en)](https://en.wikipedia.org/wiki/C%2B%2B17)
 
 ### Le type byte
 
@@ -2638,7 +2583,7 @@ int main()
 {
     any a = 1;
     cout << a.type().name() << " -> " << any_cast<int>(a) << '\n';
-
+    
     any s = string("Hello world!");
     cout << s.type().name() << " -> " << any_cast<string>(s) << '\n';
 
@@ -2650,23 +2595,16 @@ int main()
 
 Liens :
 
-- [C++20](https://www.developpez.com/actu/270849/Cplusplus-20-la-specification-de-la-nouvelle-version-du-langage-Cplusplus-est-finalisee-un-tour-d-horizon-des-nouveautes-apportees/)
-- [C++20 (en)](https://en.wikipedia.org/wiki/C%2B%2B20)
+* [C++20](https://www.developpez.com/actu/270849/Cplusplus-20-la-specification-de-la-nouvelle-version-du-langage-Cplusplus-est-finalisee-un-tour-d-horizon-des-nouveautes-apportees/)
+* [C++20 (en)](https://en.wikipedia.org/wiki/C%2B%2B20)
 
 ## Wikipédia
 
-- [C++11](https://fr.wikipedia.org/wiki/C%2B%2B11)
-- [C++14](https://fr.wikipedia.org/wiki/C%2B%2B14)
-- [C++17](https://en.wikipedia.org/wiki/C%2B%2B17)
-- [C++20](https://en.wikipedia.org/wiki/C%2B%2B20)
+* [C++11](https://fr.wikipedia.org/wiki/C%2B%2B11)
+* [C++14](https://fr.wikipedia.org/wiki/C%2B%2B14)
+* [C++17](https://en.wikipedia.org/wiki/C%2B%2B17)
+* [C++20](https://en.wikipedia.org/wiki/C%2B%2B20)
 
 ## Voir aussi
 
-- [C++ - Sujets divers](http://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/index.html)
-
-## Auteurs
-
-- [Thierry VAIRA](thierry.vaira@gmail.com) : [tvaira.free.fr](http://tvaira.free.fr/)
-
----
-©️ 2020 BTS LaSalle Avignon
+* [C++ - Sujets divers](http://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/index.html)
